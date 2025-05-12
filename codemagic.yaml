@@ -6,7 +6,7 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store # Hoặc 'development' để test
-        bundle_identifier: com.yourname.appname
+        bundle_identifier: app_store
       vars:
         XCODE_SCHEME: "YourAppName"
         XCODE_PROJECT: "./platforms/ios/YourAppName.xcodeproj"
@@ -32,7 +32,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - your-email@example.com
+          - vuongcdt@gmail.com
         notify:
           success: true
           failure: true
