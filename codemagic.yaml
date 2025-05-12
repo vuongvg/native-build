@@ -5,7 +5,7 @@ workflows:
     instance_type: mac_mini_m1
     environment:
       ios_signing:
-        distribution_type: app_store # Hoặc 'development' để test
+        distribution_type: development  # Hoặc 'development' để test
         bundle_identifier: app_store
       vars:
         XCODE_SCHEME: "YourAppName"
