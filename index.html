@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .web-view {
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        .btn {
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <!-- <iframe class="web-view" src="https://mb.1game.vn/demo/daphu-v3/" frameborder="0" scrolling="no" allowfullscreen> -->
+        <button class="btn" onclick="triggerVibration()">Rung</button>
+        <script>
+            function triggerVibration() {
+                if (navigator.vibrate) {
+                    navigator.vibrate(500);
+                } else {
+                    alert('Thiết bị không hỗ trợ rung');
+                }
+            }
+        </script>
+</body>
+
+</html>
